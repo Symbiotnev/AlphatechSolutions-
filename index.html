@@ -11,26 +11,61 @@
         <div class="container">
             <div class="logo">
                 <img src="images/AlphaTech Official.jpg" alt="AlphaTech Solutions Logo">
-                <h1 class="company-name"><span class="orange">Alphatech</span><span class="black">Solutions</span></h1>
+                <h1 class="company-name"><span class="orange">AlphaTech</span><span class="black">Solutions</span></h1>
+            </div>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Welcome to AlphaTech Solutions</h2>
+            <p class="motto">Where we Innovate, Integrate, and Accelerate</p>
+            <p class="we-offer">We offer:</p>
+            <div class="options">
+                <span>Domain Purchasing</span>
+                <span>Web Design and Hosting</span>
+                <span>Mobile Development</span>
+                <span>App Development</span>
+                <span>Graphics Designing</span>
+                <span>Brand Designs</span>
+                <span>2D and 3D Logos</span>
+            </div>
+        </div>
+    </section>
+
     <main class="content">
-        <!-- Your content here -->
+        <!-- Additional content sections can be added here -->
     </main>
 
     <footer>
-        <p>&copy; 2024 AlphaTech Solutions. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 AlphaTech Solutions. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+
+            menuToggle.addEventListener('click', function() {
+                navbar.classList.toggle('collapsed');
+            });
+        });
+    </script>
 </body>
 </html>
 

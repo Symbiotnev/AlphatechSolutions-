@@ -2,13 +2,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/*Break Points*/
+/* Break Points */
 @media only screen and (max-width: 991px) {
     body {
         width: 100%;
-        overflow-x: hidden;
     }
     header, header.sticky {
         padding: 12px 5%;
